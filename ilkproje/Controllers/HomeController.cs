@@ -26,5 +26,11 @@ namespace ilkproje.Controllers
 
             return View();
         }
+        public ActionResult test()
+        {
+            ViewBag.Message = "Your test page.";
+
+            return View();
+        }
     }
 }
