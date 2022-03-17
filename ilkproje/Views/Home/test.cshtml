@@ -1,7 +1,23 @@
-﻿
+﻿@using ilkproje.Models
+@model yazar
 @{
     ViewBag.Title = "test";
 }
+<div style="width:100%;height:auto;">
+    <div style="width:auto;height:200px;float:left;background-color:purple;">
+        <p>@ViewBag.yazarA</p>
+        <p>@ViewBag.yazarBi</p>
 
-<h2>test</h2>
+    </div>
+    <div style="width:auto;height:200px;float:left;background-color:red;">
+        <p>@Model.yazarAdi</p>
+        <p>@Model.yazarSoyad</p>
+        <p>@Model.Biyografi</p>
+        <p>@Model.dogumTarihi</p>
+    </div>
+</div>
+@section afterfooter
+{
+    <h3 style="float:left;">Sayfa Sonu</h3>
+}
 
