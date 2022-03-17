@@ -133,6 +133,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203171206166_ml.cs" />
+    <Compile Include="Migrations\202203171206166_ml.Designer.cs">
+      <DependentUpon>202203171206166_ml.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\yazar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -190,6 +194,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202203171206166_ml.resx">
+      <DependentUpon>202203171206166_ml.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
